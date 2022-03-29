@@ -1,16 +1,14 @@
 .main{
     margin-top: 445px;
-    height: 1045px;
     &-top{
         height: 265px;
         background-color: $dark-blue;
         padding: 3px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         &-left{
             height: 100%;
-            width: 246px;
+            width: 242px;
             display: flex;
             flex-direction: column;
             gap: 3px;
@@ -18,7 +16,6 @@
             &-item{
                 width: 100%;
                 height: 50%;
-
             }
             &-img{
                 width: 105px;
@@ -31,6 +28,7 @@
         &-slider{
             height: 100%;
             width: 492px;
+            margin: 0 14px;
             &-item{
                 width: 100%;
                 height: 100%;
@@ -42,19 +40,201 @@
         }
         &-right{
             height: 100%;
-            width: 246px;
+            width: 242px;
+            position: relative;
         }
         &-download{
             display: inline-block;
-            width: 1000%;
+            width: 100%;
             height: 100%;
             background-image: url(../images/btn_taigame.jpg);
             background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-sign{
+            display: inline-block;
+            width: 100%;
+            height: 50%;
+            background-image: url(../images/buttons-left.png);
+            background-position: 2px -2px;
+            &:hover{
+                background-position: -247px -2px;
+            }
+        }
+        &-coin{
+            display: inline-block;
+            width: 100%;
+            height: 50%;
+            background-image: url(../images/buttons-left.png);
+            background-position: 2px -65px;
+            margin-top: -3px;
+            &:hover{
+                background-position: -247px -65px;
+            }
         }
     }
     &-btn{
-        &-bottom{
-            background-image: url(../images/buttons-left.png);
+        &-right{
+            position: absolute;
+            top: -8px;
+            width: calc(100% + 25px);
+            height: 230px;
+            background-image: url(../images/buttons-right.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &-grid{
+                width: calc(100% - 25px);
+                height: 226px;
+                position: absolute;
+                top: 8px;
+                display: grid;
+                grid-template-columns: 116px 116px;
+                column-gap: 8px;
+                row-gap: 5px;
+            }
+            & a{
+                display: block;
+                width: 116px;
+                height: 108px;
+                &:hover{
+                    background-color: rgb(255, 255, 255, 0.1);
+                }
+            }
+        }
+    }
+    &-hotline{
+        position: absolute;
+        top: 225px;
+        width: 100%;
+        height: 34px;
+        display: flex;
+        align-items: flex-end;
+        & div{
+            display: block;
+            width: 99%;
+            height: 30px;
+            background-image: url(../images/hotline.png);
+            border: none;
+        }
+    }
+    &-bottom{
+        padding-top: 5px;
+        position: relative;
+    }
+}
+
+.bottom{
+    &-left{
+        width: 754px;
+        &-button{
+            width: 100%;
+            height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        & a{
+            display: block;
+            width: 250px;
+            height: 100%;
+        }
+        &-code{
+            &-1{
+                background-image: url(../images/cuuamlenh-vip-giftcode.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &-2{
+                background-image: url(../images/cuuamlenh-vip-giftcode.png);
+                background-position: -250px 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &-3{
+                background-image: url(../images/cuuamlenh-vip-giftcode.png);
+                background-position: -510px 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &-content{
+            background-color: $dark-blue;
+            margin-top: 10px;
+            // border-top: 8px $primary-color solid;
+            height: 1000px;
+        }
+        &-navbar{
+            width: 100%;
+            height: 55px;
+            background-image: url(../images/news-header-bg.png);
+            background-size: cover;
+            & ul{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                list-style: none;
+                align-items: center;
+                gap: 5px;
+                & a{
+                    color: $sub-primary-color;
+                    font-weight: 700;
+                    width: 100px;
+                    text-align: center;
+                }
+            }
+        }
+        &-main{
+            width: 100%;
+            background-clip: content-box;
+            background-color: white;
+            padding: 0 5px;
+        }
+    }
+    &-right{
+        position: absolute;
+        top: 5px; right: 0;
+        width: 245px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 5px;
+        background: $dark-blue;
+        & a{
+            display: inline-block;
+            margin: 0 auto;
+            width: 228px;
+            height: 53px;
+        }
+    }
+    &-skill{
+        &-1{
+            background-image: url(../images/links-right.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &-2{
+            background-image: url(../images/links-right.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -60px;
+        }
+        &-3{
+            background-image: url(../images/links-right.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -120px;
+        }
+        &-4{
+            background-image: url(../images/links-right.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -173px;
+        }
+        &-5{
+            background-image: url(../images/links-right.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -228px;
         }
     }
 }

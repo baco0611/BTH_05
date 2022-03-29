@@ -27,6 +27,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    opacity: 0.9;
+}
+
 img{
     display: block;
     max-width: 100%;

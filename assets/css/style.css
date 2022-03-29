@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.9;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -108,22 +112,23 @@ body {
   font-family: "Roboto Slab", serif;
   text-align: center;
 }
+.header a:hover {
+  opacity: 0.6;
+}
 
 .main {
   margin-top: 445px;
-  height: 1045px;
 }
 .main-top {
   height: 265px;
   background-color: #1f3252;
   padding: 3px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .main-top-left {
   height: 100%;
-  width: 246px;
+  width: 242px;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -143,6 +148,7 @@ body {
 .main-top-slider {
   height: 100%;
   width: 492px;
+  margin: 0 14px;
 }
 .main-top-slider-item {
   width: 100%;
@@ -154,17 +160,193 @@ body {
 }
 .main-top-right {
   height: 100%;
-  width: 246px;
+  width: 242px;
+  position: relative;
 }
 .main-top-download {
   display: inline-block;
-  width: 1000%;
+  width: 100%;
   height: 100%;
   background-image: url(../images/btn_taigame.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
-.main-btn-bottom {
+.main-top-sign {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
   background-image: url(../images/buttons-left.png);
+  background-position: 2px -2px;
+}
+.main-top-sign:hover {
+  background-position: -247px -2px;
+}
+.main-top-coin {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+  background-image: url(../images/buttons-left.png);
+  background-position: 2px -65px;
+  margin-top: -3px;
+}
+.main-top-coin:hover {
+  background-position: -247px -65px;
+}
+.main-btn-right {
+  position: absolute;
+  top: -8px;
+  width: calc(100% + 25px);
+  height: 230px;
+  background-image: url(../images/buttons-right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-btn-right-grid {
+  width: calc(100% - 25px);
+  height: 226px;
+  position: absolute;
+  top: 8px;
+  display: grid;
+  grid-template-columns: 116px 116px;
+  column-gap: 8px;
+  row-gap: 5px;
+}
+.main-btn-right a {
+  display: block;
+  width: 116px;
+  height: 108px;
+}
+.main-btn-right a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.main-hotline {
+  position: absolute;
+  top: 225px;
+  width: 100%;
+  height: 34px;
+  display: flex;
+  align-items: flex-end;
+}
+.main-hotline div {
+  display: block;
+  width: 99%;
+  height: 30px;
+  background-image: url(../images/hotline.png);
+  border: none;
+}
+.main-bottom {
+  padding-top: 5px;
+  position: relative;
+}
+
+.bottom-left {
+  width: 754px;
+}
+.bottom-left-button {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-left a {
+  display: block;
+  width: 250px;
+  height: 100%;
+}
+.bottom-left-code-1 {
+  background-image: url(../images/cuuamlenh-vip-giftcode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom-left-code-2 {
+  background-image: url(../images/cuuamlenh-vip-giftcode.png);
+  background-position: -250px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom-left-code-3 {
+  background-image: url(../images/cuuamlenh-vip-giftcode.png);
+  background-position: -510px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom-left-content {
+  background-color: #1f3252;
+  margin-top: 10px;
+  height: 1000px;
+}
+.bottom-left-navbar {
+  width: 100%;
+  height: 55px;
+  background-image: url(../images/news-header-bg.png);
+  background-size: cover;
+}
+.bottom-left-navbar ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 5px;
+}
+.bottom-left-navbar ul a {
+  color: #c7a87a;
+  font-weight: 700;
+  width: 100px;
+  text-align: center;
+}
+.bottom-left-main {
+  width: 100%;
+  background-clip: content-box;
+  background-color: white;
+  padding: 0 5px;
+}
+.bottom-right {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 5px;
+  background: #1f3252;
+}
+.bottom-right a {
+  display: inline-block;
+  margin: 0 auto;
+  width: 228px;
+  height: 53px;
+}
+.bottom-skill-1 {
+  background-image: url(../images/links-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bottom-skill-2 {
+  background-image: url(../images/links-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -60px;
+}
+.bottom-skill-3 {
+  background-image: url(../images/links-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -120px;
+}
+.bottom-skill-4 {
+  background-image: url(../images/links-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -173px;
+}
+.bottom-skill-5 {
+  background-image: url(../images/links-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -228px;
 }
 
 /*# sourceMappingURL=style.css.map */
