@@ -1,0 +1,60 @@
+.main{
+    margin-top: 445px;
+    height: 1045px;
+    &-top{
+        height: 265px;
+        background-color: $dark-blue;
+        padding: 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-left{
+            height: 100%;
+            width: 246px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            position: relative;
+            &-item{
+                width: 100%;
+                height: 50%;
+
+            }
+            &-img{
+                width: 105px;
+                height: 230px;
+                position: absolute;
+                left: -80px;
+                top: -2px;
+            }
+        }
+        &-slider{
+            height: 100%;
+            width: 492px;
+            &-item{
+                width: 100%;
+                height: 100%;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &-right{
+            height: 100%;
+            width: 246px;
+        }
+        &-download{
+            display: inline-block;
+            width: 1000%;
+            height: 100%;
+            background-image: url(../images/btn_taigame.jpg);
+            background-repeat: no-repeat;
+        }
+    }
+    &-btn{
+        &-bottom{
+            background-image: url(../images/buttons-left.png);
+        }
+    }
+}

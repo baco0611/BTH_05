@@ -1,0 +1,170 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+input, textarea, section, button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 1900px;
+  min-height: 1350px;
+  background-image: url(../images/bg-top.jpg), url(../images/bg-bottom.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+  background-color: #f2f2f2;
+}
+
+.wraper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.wraper-small {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  gap: 190px;
+}
+.header-left {
+  width: 435px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left-item {
+  width: 108.75px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-left-item a {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  width: 100%;
+  height: 20px;
+  font-size: 1em;
+  line-height: 20px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+.header-right {
+  width: 435px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-right-item {
+  width: 108.75px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-right-item a {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  width: 100%;
+  height: 20px;
+  font-size: 1em;
+  line-height: 20px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+.main {
+  margin-top: 445px;
+  height: 1045px;
+}
+.main-top {
+  height: 265px;
+  background-color: #1f3252;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-top-left {
+  height: 100%;
+  width: 246px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+}
+.main-top-left-item {
+  width: 100%;
+  height: 50%;
+}
+.main-top-left-img {
+  width: 105px;
+  height: 230px;
+  position: absolute;
+  left: -80px;
+  top: -2px;
+}
+.main-top-slider {
+  height: 100%;
+  width: 492px;
+}
+.main-top-slider-item {
+  width: 100%;
+  height: 100%;
+}
+.main-top-slider-item img {
+  width: 100%;
+  height: 100%;
+}
+.main-top-right {
+  height: 100%;
+  width: 246px;
+}
+.main-top-download {
+  display: inline-block;
+  width: 1000%;
+  height: 100%;
+  background-image: url(../images/btn_taigame.jpg);
+  background-repeat: no-repeat;
+}
+.main-btn-bottom {
+  background-image: url(../images/buttons-left.png);
+}
+
+/*# sourceMappingURL=style.css.map */
