@@ -28,7 +28,7 @@ a{
 }
 
 a:hover{
-    opacity: 0.9;
+    opacity: 0.75;
 }
 
 img{
@@ -40,11 +40,11 @@ body{
     line-height: 1;
     color: white;
     font-family: $primary-font;
-    width: 1900px;
     min-height: 1350px;
     background-image: url(../images/bg-top.jpg), url(../images/bg-bottom.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top , bottom;
+    background-size:auto;
+    background-position: top center, bottom center;
     background-color: #f2f2f2;
 }
 
