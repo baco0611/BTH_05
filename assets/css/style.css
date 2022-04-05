@@ -294,6 +294,7 @@ body {
   gap: 5px;
 }
 .bottom-left-navbar ul a {
+  display: block;
   color: #c7a87a;
   font-weight: 700;
   width: 100px;

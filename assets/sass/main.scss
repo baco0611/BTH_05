@@ -179,6 +179,7 @@
                 align-items: center;
                 gap: 5px;
                 & a{
+                    display: block;
                     color: $sub-primary-color;
                     font-weight: 700;
                     width: 100px;
