@@ -252,7 +252,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.bottom-left a {
+.bottom-left-button a {
   display: block;
   width: 250px;
   height: 100%;
@@ -331,13 +331,16 @@ body {
   width: 490px;
   height: 100%;
 }
-.bottom-link-item-content h1 {
+.bottom-link-item-content a {
+  display: inline-block;
+  width: 100%;
   padding-left: 10px;
   border-left: 5px #b70f0b solid;
   font-size: 1.35em;
   line-height: 1.1;
   color: #b70f0b;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .bottom-link-item-content h2 {
   padding: 10px 0;
